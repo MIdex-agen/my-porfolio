@@ -263,54 +263,46 @@ color: var(--text-color);
 
 
 
-.footer-container {
+.footer-section .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.footer-about, .footer-links, .footer-contact {
-    flex: 1;
-    min-width: 200px;
-    color: var(--text-color);
+.footer-section .container img {
+    padding: 0 10px;
+    width: 100px;
+    gap: 20px;
 }
-.footer-links {
-    justify-content: center;
+
+
+.footer-section  p {
+    color:var(--text-color);
+    text-align: center;
+    font-size: 16px;
+}
+
+
+.footer-section .buttom {
+    border-top: 1px solid var(--link-color);
+    background-color: var(--backgrounnd-color);
+    color: var(--backgrounnd-color);
+}
+
+.footer-section .buttom p {
+    color: var(--text-color);
     text-align: center;
 }
-
-.footer-links img {
-    gap: 100px;
-    padding: 0 10px;
-    width: 60;
-}
-
-
-.footer h2, .footer h3 {
-    color:var(--text-color);
-}
-
-
-.footer-buttom {
-    text-align: right;
-    padding-top: 40px;
-    border-top: 1px solid var(--link-color);
-    margin-top: 10px;
-    font-size: 24px;
-    background-color:var(--text-color);
-    color: var(--backgrounnd-color);
-
-}
 @media (max-width: 850px){
-/* SECTION 1: HERO */
+/* SECTION 1: Hero  */
 .hero-section .text h2 {
     font-size: 35px;
 }
 }
 
 @media (max-width: 740px) {
-    /* SECTION 1: HERO */
+    /* SECTION 1: Hero  */
 
     .hero-section {
         flex-direction: column-reverse;
@@ -334,15 +326,17 @@ color: var(--text-color);
        .contact-section .group {
         flex-direction: column;
        }
-       .footer {
-        flex-direction: column;
+
+        /*Footer*/
+       .footer-section .container img {
+        flex-direction: row-reverse;
        }
 
     }
 @media (max-width: 600px) {
     /* NAVBAR */
      nav {
-        padding: 0 29px;
+        padding: 0 20px;
      }
 
      nav .right a {
@@ -365,17 +359,19 @@ color: var(--text-color);
         padding: 0 20px;
      }
 
-      .hero-section.text h2 {
+      .hero-section .text h2 {
          font-size: 30px;
+         color: red;
      } 
 
      /* SECTION 2: Skills*/
-      .skills-section {
+     .skills-section {
         padding: 0 20px;
       }
 
       .skills-section .cells .cell span {
         font-size: 16px;
+        padding:0 20px ;
       }
 
       /*SECTION 3: Testimony*/
@@ -387,9 +383,25 @@ color: var(--text-color);
        .contact-section .group {
         padding: 0 20px;
        }
-
-       .footer {
+       /*Footer*/
+        .footer-section {
         padding: 0 20px;
+       }
+
+       .footer-section  p{
+        font-size: 16px;
+        justify-content: center;
+        align-items: center;
+       }
+
+       .footer-section .container img {
+        padding: 0 20px;
+        width: 70px;
+       }
+       
+
+       .footer-section .buttom p {
+        font-size: 16px;
        }
 }
 
