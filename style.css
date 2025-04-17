@@ -41,6 +41,11 @@ nav .left a {
 
 }
 
+nav .left  img {
+    width: 20px;
+    height: auto;
+}
+
 nav .right a {
     color: var(--text-color);
     margin: 0 10px;     
@@ -333,7 +338,7 @@ color: var(--text-color);
        }
 
     }
-@media (max-width: 600px) {
+@media (max-width: 425px) {
     /* NAVBAR */
      nav {
         padding: 0 20px;
@@ -360,8 +365,9 @@ color: var(--text-color);
      }
 
       .hero-section .text h2 {
-         font-size: 30px;
+         font-size: 1.8rem;
          color: red;
+         text-align: center;
      } 
 
      /* SECTION 2: Skills*/
@@ -369,9 +375,20 @@ color: var(--text-color);
         padding: 0 20px;
       }
 
+      .skill-section .text {
+        font-size: 1.8rem;
+      }
+
+
+      .skills-section .cells .cell img {
+        width: 30px;
+        height: 30;
+        object-fit: contain;
+        border-radius: 2px;
+      }
       .skills-section .cells .cell span {
         font-size: 16px;
-        padding:0 20px ;
+        padding:0 30px ;
       }
 
       /*SECTION 3: Testimony*/
@@ -389,19 +406,20 @@ color: var(--text-color);
        }
 
        .footer-section  p{
-        font-size: 16px;
+        font-size: 13px;
         justify-content: center;
         align-items: center;
        }
 
        .footer-section .container img {
-        padding: 0 20px;
-        width: 70px;
+        width: 15%;
+        height: auto;
+
        }
        
 
        .footer-section .buttom p {
-        font-size: 16px;
+        font-size: 13px;
        }
 }
 
