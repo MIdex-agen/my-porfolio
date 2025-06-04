@@ -329,7 +329,7 @@ span {
 
 .timeline-item {
     margin-bottom: 40px;
-    width: 100px;
+    width: 100%;
     position: relative;
 }
 
@@ -693,7 +693,7 @@ span {
     }
  }
 
- @media(max-width:600px) {
+ @media(max-width:400px) {
     #menu-icon {
         display: block;
     }
